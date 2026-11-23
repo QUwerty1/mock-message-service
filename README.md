@@ -24,3 +24,7 @@ uvicorn app.main:app --reload
 `POST /` принимает JSON с полями `token`, `body`, `mira_id` и `type`. Успешный ответ имеет статус `200` и тело `{"status":"ok"}`. Неверный токен возвращает `401`.
 
 Проверка доступности выполняется через `GET /health`.
+
+## Docker Image
+
+Образ доступен на DockerHub: quwerty0/mock-message-service:21.11.2026
